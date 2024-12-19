@@ -1,0 +1,177 @@
+.content{
+  margin-left: 200px; /* Độ rộng của sidebar */
+  padding: 20px; /* Khoảng cách giữa nội dung và viền */
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Khoảng cách giữa cột và biểu đồ */
+}
+
+.parameter-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Khoảng cách giữa các box */
+}
+
+.chart-box {
+  flex: 1; /* Biểu đồ chiếm hết chiều ngang còn lại */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfc;
+}
+
+.chart-box canvas {
+  width: 90%; /* Đảm bảo biểu đồ co dãn theo container */
+  max-height: 350px; /* Chiều cao tối đa cho biểu đồ */
+}
+  
+  .parameter-box {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .icon{
+    color: #000;
+    font-size: 50px;
+  }
+  .parameter-box h2 {
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .parameter-box p {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .temperature {
+    background:  rgb(255, 255, 255);
+    color: white;
+  }
+  
+  .humidity {
+    background: rgb(255, 255, 255);
+    color: white;
+  }
+  
+  .heart {
+    
+    background: rgb(255, 255, 255);
+    color: black;
+  }
+
+  .oxy {
+    
+    background: rgb(255, 255, 255);
+    color: black;
+  }
+
+  .actionhistory-content{
+    text-align: center;
+    font-size: 24px;
+  }
+  table {
+    border: 3px solid #ff0000; /* Viền của bảng */
+    margin: 0 auto; /* Căn giữa bảng theo chiều ngang */
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #000000; /* Viền của các ô */
+    padding: 8px;
+    text-align: center;
+  }
+  tr:hover {
+    background-color: #ffffff; /* Màu nền khi di chuột qua dòng */
+  }
+  th {
+    background-color: #ff4848;
+    font-weight: bold;
+  }
+  .sensordata-content{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .chart-custom{
+    margin-left: 50px;
+    padding: 20px; /* Khoảng cách giữa nội dung và viền */
+    flex: 2;
+    width: 50%;
+    height: 100%;
+    
+    background-color: #fcfcfc;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .page-button {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .page-button.active {
+    font-weight: bold;
+    background-color: #e7f91f;
+    color: rgb(0, 0, 0);
+  }
+  
+  .page-button:hover {
+    background-color: #eaff31;
+  }
+
+  button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .search-controls {
+    margin-bottom: 20px;
+  }
+  
+  .search-controls label {
+    margin-right: 10px;
+  }
+  
+  .search-controls button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  

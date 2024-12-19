@@ -1,0 +1,84 @@
+
+body {
+  background-color: #a2e7ef; /* Màu nền tổng thể của ứng dụng */
+}
+
+.sidebar {
+  width: 150px; /* Độ rộng của sidebar */
+  background-color: #000000; /* Màu nền của sidebar */
+  color: #fff; /* Màu chữ trong sidebar */
+  padding: 24px; /* Khoảng cách giữa nội dung và viền */
+  position: fixed; /* Giữ sidebar cố định */
+  height: 100%; /* Chiều cao của sidebar */
+  top: 0; /* Vị trí bắt đầu từ đầu trang */
+  left: 0; /* Vị trí bắt đầu từ bên trái */
+}
+
+/* CSS cho các liên kết trong sidebar */
+.sidebar ul {
+  list-style: none; /* Loại bỏ dấu gạch đầu dòng của danh sách */
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px; /* Khoảng cách giữa các mục danh sách */
+}
+
+.sidebar ul li a {
+  text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+  color: #ffffff; /* Màu chữ của liên kết */
+  display: block; /* Hiển thị liên kết dưới dạng khối */
+}
+
+/* CSS cho liên kết được chọn (active) */
+.sidebar ul li a.active {
+  font-weight: bold; /* In đậm cho liên kết được chọn */
+}
+
+/* CSS cho hover liên kết */
+.sidebar ul li a:hover {
+  background-color: #f26464; /* Màu nền khi di chuột qua liên kết */
+  padding: 5px;
+  border-radius: 5px;
+}
+.content {
+  margin-left: 200px; /* Khoảng cách từ nội dung đến sidebar */
+  padding: 20px; /* Khoảng cách giữa nội dung và viền */
+/*  background-color: #fff;  Màu nền của phần nội dung 
+  border: 1px solid #000000; /* Viền xung quanh nội dung */
+}
+.sidebar-header {
+  text-align: center; /* Căn giữa chữ "IoT" */
+  margin-bottom: 20px; /* Khoảng cách giữa "IoT" và danh sách liên kết */
+}
+
+.sidebar-header h1 {
+  animation: glowing 3s infinite; /* Animation glowing */
+  font-size: 50px;
+}
+
+.logout-button {
+  display: inline-block;
+  width: 100%; /* Để nút kéo dài hết chiều ngang của container */
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #e74c3c; /* Màu đỏ nổi bật */
+  color: white; /* Chữ màu trắng */
+  border: none; /* Loại bỏ viền */
+  border-radius: 5px; /* Góc bo tròn */
+  font-size: 16px; /* Kích thước chữ */
+  font-weight: bold; /* In đậm chữ */
+  cursor: pointer; /* Con trỏ chuột thay đổi thành pointer khi hover */
+  text-align: center; /* Canh giữa chữ */
+  transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển màu và thu phóng */
+}
+
+.logout-button:hover {
+  background-color: #c0392b; /* Màu đỏ đậm hơn khi hover */
+  transform: scale(1.05); /* Tăng kích thước nút khi hover */
+}
+
+.logout-button:active {
+  background-color: #a93226; /* Màu khi nút được bấm */
+  transform: scale(0.98); /* Thu nhỏ khi bấm */
+}

@@ -1,0 +1,92 @@
+/* Đặt nền và căn giữa container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 60vw;
+    margin: auto; /* Đặt giữa khung */
+    background-color: #a2e7ef;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Thiết kế form */
+  form {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Tiêu đề */
+  form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+  }
+  
+  /* Nhãn */
+  form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555555;
+  }
+  
+  /* Input fields */
+  form input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Nút đăng nhập */
+  form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Thông báo lỗi */
+  .error {
+    color: #d9534f;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    form {
+      padding: 15px;
+    }
+    
+    form h1 {
+      font-size: 20px;
+    }
+  }
+  

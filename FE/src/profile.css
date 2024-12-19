@@ -1,0 +1,43 @@
+.profile-content {
+    margin-top: 50px;
+    max-width: 800px;
+    margin-left: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ffae00;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  strong {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+.avatar{
+  width: auto;
+  height: 200px;
+}
+  
+  /* Style the header */
+/* .profile-content h1 {
+  font-size: 24px;
+} */
+
+/* Style the list items */
+/* .profile-content li {
+  font-size: 18px;
+} */
